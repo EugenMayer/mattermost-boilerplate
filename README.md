@@ -4,11 +4,6 @@ Helps you to quickstart mattermost locally using docker.
 
 Also see the rancher catalog for the production grade https://github.com/EugenMayer/docker-rancher-extra-catalogs one
 
-Also see 
- - https://docs.mattermost.com/administration/config-settings.html
- - https://github.com/mattermost/mattermost-docker/blob/master/docker-compose.yml
- - https://hub.docker.com/r/mattermost/mattermost-team-edition
-
 ### Usage
 
 No need to build any images, just start it
@@ -41,4 +36,11 @@ Just run
 To build your own images which then are tagged lile
  - `myname/mattermost-app:team-5.13.2` - that's the app image
  - `myname/mattermost-db:team-5.13.2` - that's the db image
-```
+
+### More
+
+ - https://docs.mattermost.com/administration/config-settings.html
+ - https://github.com/mattermost/mattermost-docker
+
+### Credits
+All the credits direct to https://mattermost.com
