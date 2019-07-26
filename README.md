@@ -19,8 +19,8 @@ Now connect to `http://localhost:8000`
 The images are build right based the original repository at `https://github.com/mattermost/mattermost-docker`
 and then published under 
 
- - https://hub.docker.com/r/eugenmayer/mattermost-team-app ( `eugenmayer/mattermost-team-app` )
- - https://hub.docker.com/r/eugenmayer/mattermost-team-db (`eugenmayer/mattermost-team-db`)
+ - https://hub.docker.com/r/eugenmayer/mattermost-app ( `eugenmayer/mattermost-app` )
+ - https://hub.docker.com/r/eugenmayer/mattermost-db (`eugenmayer/mattermost-db`)
  
 Check the `docker-compose.yaml` to see how they are used - but in the end, those are the originals ( see `build.sh` )
 so just use the official documentation.
