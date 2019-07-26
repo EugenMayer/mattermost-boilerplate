@@ -1,0 +1,48 @@
+version: "2"
+
+services:
+  app:
+    image: mattermost/mattermost-team-edition:5.13.2
+    environment:
+      MM_USERNAME: ${DB_USER}
+      MM_PASSWORD: ${DB_PASSWORD}
+      MM_DBNAME: ${DB_NAME}
+      DB_HOST: db
+      DB_PORT_NUMBER: 5432
+    volumes:
+      - mattermost_config:/mattermost/config
+      - mattermost_data:/mattermost/data
+      - mattermost_logs:/mattermost/logs
+      - mattermost_plugins:/mattermost/plugins
+      - mattermost_client:/mattermost/client
+      - mattermost_client_plugins:/mattermost/client_plugins
+    ports:
+      - 8000:8000
+      - 8065:8065
+  db:
+    image: postgres:11.4
+    volumes:
+      - mattermost_db:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_ENCODING: "UNICODE"
+      POSTGRES_COLLATE: "C"
+      POSTGRES_COLLATE_TYPE: "C"
+
+volumes:
+  mattermost_config:
+    driver: local
+  mattermost_data:
+    driver: local
+  mattermost_logs:
+    driver: local
+  mattermost_plugins:
+    driver: local
+  mattermost_client:
+    driver: local
+  mattermost_client_plugins:
+    driver: local
+  mattermost_db:
+    driver: local
