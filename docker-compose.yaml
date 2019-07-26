@@ -15,8 +15,7 @@ services:
       - mattermost_data:/mattermost/data
       - mattermost_logs:/mattermost/logs
       - mattermost_plugins:/mattermost/plugins
-      - mattermost_client:/mattermost/client
-      - mattermost_client_plugins:/mattermost/client_plugins
+      - mattermost_client_plugins:/mattermost/client/plugins
     ports:
       - 8000:8000
   db:
@@ -39,8 +38,6 @@ volumes:
   mattermost_logs:
     driver: local
   mattermost_plugins:
-    driver: local
-  mattermost_client:
     driver: local
   mattermost_client_plugins:
     driver: local
