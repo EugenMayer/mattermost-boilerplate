@@ -1,8 +1,9 @@
 ## WAT
 
-Helps you to quickstart mattermost locally using docker.
+Helps you to quickstart mattermost locally using docker and also offers prebuild images (original source) for mattermost without you being required to build them yourself
 
-Also see the rancher catalog for the production grade https://github.com/EugenMayer/docker-rancher-extra-catalogs one
+
+It also is thebase for the rancher catalog for the production grade hosting, see  https://github.com/EugenMayer/docker-rancher-extra-catalogs
 
 ### Usage
 
