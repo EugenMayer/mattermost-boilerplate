@@ -1,10 +1,9 @@
 ## WAT
 
-Helps you to quickstart mattermost locally using docker and also offers prebuild docker images for mattermost, [eugenmayer/mattermost-app](https://hub.docker.com/r/eugenmayer/mattermost-app) / [eugenmayer/mattermost-db](https://hub.docker.com/r/eugenmayer/mattermost-db) based on the original source -  without you being required to build them yourself.
-
-It also is thebase for the rancher catalog for the production grade hosting, see  https://github.com/EugenMayer/docker-rancher-extra-catalogs
-
-Also offers you a convinient way to build your own images.
+- production grade and prebuild docker images for mattermost, [eugenmayer/mattermost-app](https://hub.docker.com/r/eugenmayer/mattermost-app) / [eugenmayer/mattermost-db](https://hub.docker.com/r/eugenmayer/mattermost-db) based on the original source -  without you being required to build them yourself.
+- Helps you to quickstart mattermost locally using docker
+- It also is the base for the rancher catalog for the production grade hosting, see  https://github.com/EugenMayer/docker-rancher-extra-catalogs
+- Finally it offers you a convinient way to build your own images or extend if you need
 
 ### Usage
 
