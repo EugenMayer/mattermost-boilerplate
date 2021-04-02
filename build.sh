@@ -3,7 +3,7 @@
 VERSION=${1:-5.13.2}
 IMAGE_BASE_NAME=${2:-eugenmayer/mattermost}
 
-git clone https://github.com/mattermost/mattermost-docker
+#git clone https://github.com/mattermost/mattermost-docker
 
 pushd mattermost-docker
 git pull
