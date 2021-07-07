@@ -21,7 +21,7 @@ services:
     ports:
       - 8000:8000
   db:
-    image: eugenmayer/mattermost-db:team-${VERSION}
+    image: postegres:10
     volumes:
       - mattermost_db:/var/lib/postgresql/data
     environment:
