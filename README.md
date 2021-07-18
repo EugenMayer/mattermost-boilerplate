@@ -1,9 +1,8 @@
 ## WAT
 
-- production grade and prebuild docker images for mattermost, [eugenmayer/mattermost-app](https://hub.docker.com/r/eugenmayer/mattermost-app) based on the original source -  without you being required to build them yourself.
 - Helps you to quickstart mattermost locally using docker
+- uses the official docker-images by mattermost from https://hub.docker.com/r/mattermost/mattermost-team-edition
 - It also is the base for the rancher catalog for the production grade hosting, see  https://github.com/EugenMayer/docker-rancher-extra-catalogs
-- Finally it offers you a convinient way to build your own images or extend if you need
 
 ### Usage
 
@@ -27,7 +26,7 @@ so just use the official documentation.
 
 See the docker hub projects for the available tags / versions.
 
-### Build the images yourself
+### Build custom / dev images
 
 Just run
 

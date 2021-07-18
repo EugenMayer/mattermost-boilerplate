@@ -2,7 +2,8 @@ version: "2"
 
 services:
   app:
-    image: eugenmayer/mattermost-app:team-${VERSION}
+    #image: eugenmayer/mattermost-app:team-${VERSION}
+    image: mattermost/mattermost-team-edition:release-5.37
     environment:
       MM_USERNAME: ${DB_USER}
       MM_PASSWORD: ${DB_PASSWORD}
@@ -19,9 +20,9 @@ services:
       - mattermost_plugins:/mattermost/plugins
       - mattermost_client_plugins:/mattermost/client/plugins
     ports:
-      - 8000:8000
+      - 8000:8065
   db:
-    image: postegres:10
+    image: postgres:10
     volumes:
       - mattermost_db:/var/lib/postgresql/data
     environment:
